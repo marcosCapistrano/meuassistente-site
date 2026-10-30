@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Assistente — Seu assistente pessoal com IA no WhatsApp</title>
-  <meta name="description" content="Lembretes, agenda, listas, respostas rápidas e tarefas do dia a dia resolvidos em uma conversa. Assistente pessoal com inteligência artificial pelo WhatsApp e pela web.">
+  <title>Meu Assistente — Um assistente com IA para cada parte da sua vida</title>
+  <meta name="description" content="Crie assistentes pessoais com inteligência artificial para a alimentação, os estudos, as contas da casa e o trabalho. Você descreve o que precisa e ele fica pronto em um minuto. Grátis para começar.">
   <link rel="canonical" href="https://meuassistente.io/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Meu Assistente — Seu assistente pessoal com IA, disponível 24 horas">
-  <meta property="og:description" content="Lembretes, agenda, listas, respostas rápidas e tarefas do dia a dia resolvidos em uma conversa.">
+  <meta property="og:title" content="Meu Assistente — Um assistente para cada parte da sua vida">
+  <meta property="og:description" content="Você descreve o que precisa e seu assistente fica pronto em um minuto. Grátis para começar, sem cartão.">
   <meta property="og:url" content="https://meuassistente.io/">
-  <meta name="theme-color" content="#5b3df5">
+  <meta property="og:image" content="https://meuassistente.io/assets/img/hero.jpg">
+  <meta name="theme-color" content="#faf9f7">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/assets/img/hero.webp" type="image/webp">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -24,19 +26,17 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="/" aria-label="Meu Assistente — página inicial">
-        <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
-        Meu Assistente
+        <span class="logo-dot" aria-hidden="true"></span>Meu Assistente
       </a>
       <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <ul class="nav-links" id="menu">
+        <li><a href="/#exemplos">Exemplos</a></li>
         <li><a href="/#como-funciona">Como funciona</a></li>
-        <li><a href="/#funcionalidades">Funcionalidades</a></li>
         <li><a href="/#planos">Planos</a></li>
         <li><a href="/#faq">Dúvidas</a></li>
-        <li><a href="/sobre.html">Sobre</a></li>
-        <li><a class="btn btn-primary" href="/#lista-de-espera">Quero testar grátis</a></li>
+        <li><a class="btn btn-dark" href="https://app.meuassistente.io/cadastro">Começar grátis</a></li>
       </ul>
     </div>
   </header>
@@ -45,37 +45,65 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Pelo WhatsApp e pela web</span>
-          <h1>Seu assistente pessoal com IA, <span class="grad">disponível 24 horas</span></h1>
-          <p class="hero-sub">Lembretes, agenda, listas, respostas rápidas e tarefas do dia a dia resolvidos em uma conversa.</p>
+        <div class="hero-copy">
+          <p class="label">Assistentes pessoais com IA</p>
+          <h1>Um assistente para cada parte da sua vida.</h1>
+          <p class="hero-sub">Um para a alimentação, outro para os estudos, outro para as contas da casa. Você descreve o que precisa, com as suas palavras, e ele fica pronto em um minuto.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#lista-de-espera">Quero testar grátis
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn-ghost" href="#como-funciona">Ver como funciona</a>
+            <a class="btn btn-primary btn-lg" href="https://app.meuassistente.io/cadastro">Criar meu assistente</a>
+            <a class="link-arrow" href="#como-funciona">Ver como funciona <span aria-hidden="true">→</span></a>
           </div>
-          <div class="hero-note">
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sem instalar nada</span>
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Em português</span>
-            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plano gratuito</span>
-          </div>
+          <p class="hero-note">Grátis para começar <span aria-hidden="true">·</span> Sem cartão <span aria-hidden="true">·</span> iPhone, Android e web</p>
         </div>
 
-        <div class="phone" aria-label="Exemplo de conversa com o Meu Assistente">
-          <div class="phone-top">
-            <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
-            <div><strong>Meu Assistente</strong><small>online</small></div>
+        <div class="hero-visual">
+          <picture>
+            <source srcset="/assets/img/hero.webp" type="image/webp">
+            <img class="hero-photo" src="/assets/img/hero.jpg" width="1100" height="1467" alt="Mulher sentada à mesa consultando o Meu Assistente no celular">
+          </picture>
+
+          <div class="device" role="img" aria-label="Tela do app Meu Assistente mostrando a lista de assistentes">
+            <div class="device-screen">
+              <div class="device-status"><span>9:41</span><span class="device-island"></span><span class="device-icons"></span></div>
+              <p class="device-title">Seus assistentes</p>
+              <ul class="device-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M4 11h16a8 8 0 0 1-16 0zM12 11V7M12 7c0-2 1.5-3.5 4-4M12 7c-.5-2-2-3-4-3"/></svg>
+                  <div><strong>Alimentação</strong><small>Cardápio da semana pronto</small></div>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>
+                  <div><strong>Contas da casa</strong><small>Conta de luz vence amanhã</small></div>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg>
+                  <div><strong>Estudos</strong><small>Resumo do capítulo 4</small></div>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+                  <div><strong>Trabalho</strong><small>3 lembretes hoje</small></div>
+                </li>
+                <li class="device-new">
+                  <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <div><strong>Novo assistente</strong></div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="chat">
-            <div class="bubble me">Me lembra de pagar a conta de luz sexta às 9h<time>08:12</time></div>
-            <div class="bubble ai">Feito! ✅ Vou te lembrar na <strong>sexta-feira às 9h</strong> de pagar a conta de luz.<time>08:12</time></div>
-            <div class="bubble me">Coloca leite, ovos e café na lista do mercado<time>08:14</time></div>
-            <div class="bubble ai">Adicionei à sua lista de compras 🛒
-              <ul><li>Leite</li><li>Ovos</li><li>Café</li></ul><time>08:14</time></div>
-            <div class="bubble me">O que eu tenho amanhã?<time>08:15</time></div>
-            <div class="bubble ai">Amanhã você tem reunião às 10h e dentista às 16h30. Quer que eu te avise 1 hora antes de cada um?<time>08:15</time></div>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="section section-line" id="por-que">
+      <div class="container split">
+        <div class="reveal">
+          <p class="label">O problema</p>
+          <h2>Sua cabeça não precisa guardar tudo.</h2>
+        </div>
+        <div class="reveal">
+          <p class="lead">Conta para pagar, remédio na hora certa, a dieta que começa na segunda, a prova da semana que vem. É muita coisa para lembrar sozinho.</p>
+          <p class="lead muted">O Meu Assistente guarda tudo isso por você, organiza do jeito que você precisa e avisa no seu celular na hora certa.</p>
         </div>
       </div>
     </section>
@@ -84,102 +112,111 @@
     <section class="section section-soft" id="como-funciona">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Como funciona</span>
-          <h2>Simples como mandar uma mensagem</h2>
-          <p>Sem aplicativo novo para aprender. Você conversa do seu jeito e o assistente cuida do resto.</p>
+          <p class="label">Como funciona</p>
+          <h2>Tão simples quanto mandar uma mensagem.</h2>
+          <p>Não precisa entender de tecnologia. Se você sabe escrever uma mensagem, já sabe usar.</p>
         </div>
-        <div class="steps">
-          <div class="step reveal">
-            <div class="step-num">1</div>
-            <h3>Você manda uma mensagem</h3>
-            <p>Escreva ou envie um áudio pelo WhatsApp ou pela web, com suas próprias palavras.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step-num">2</div>
-            <h3>A IA entende o que você precisa</h3>
-            <p>O assistente interpreta o pedido, identifica datas, horários e itens e confirma com você.</p>
-          </div>
-          <div class="step reveal">
-            <div class="step-num">3</div>
-            <h3>Tudo fica organizado automaticamente</h3>
-            <p>Lembretes, compromissos e listas ficam salvos e você é avisado na hora certa.</p>
-          </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Conte o que você precisa</h3>
+            <p>Com as suas palavras. Por exemplo: “Quero ajuda para comer melhor e montar a lista do mercado.”</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Dê um nome e um jeito</h3>
+            <p>Escolha como ele fala com você: mais direto, mais detalhado ou mais paciente.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Pronto. É só conversar.</h3>
+            <p>Por texto ou por áudio, quando quiser. Ele lembra do que vocês combinaram e avisa na hora certa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Exemplos -->
+    <section class="section" id="exemplos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="label">Exemplos</p>
+          <h2>Não sabe por onde começar? Escolha um pronto.</h2>
+          <p>Use como está ou ajuste do seu jeito. Cada assistente cuida de uma parte da sua rotina.</p>
+        </div>
+        <div class="examples">
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><path d="M4 11h16a8 8 0 0 1-16 0zM12 11V7M12 7c0-2 1.5-3.5 4-4M12 7c-.5-2-2-3-4-3"/></svg>
+            <h3>Alimentação</h3>
+            <p>Monta o cardápio da semana e a lista do mercado com o que você gosta.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-6h4v6"/></svg>
+            <h3>Contas da casa</h3>
+            <p>Guarda os vencimentos e avisa antes de cada boleto vencer.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg>
+            <h3>Estudos</h3>
+            <p>Resume a matéria, cria perguntas para revisar e organiza a rotina de estudo para o ENEM ou concurso.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg>
+            <h3>Inglês</h3>
+            <p>Conversa com você todos os dias e corrige com calma, sem vergonha de errar.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><path d="M3 12h3l3-7 4 14 3-7h5"/></svg>
+            <h3>Saúde e treino</h3>
+            <p>Treinos curtos para fazer em casa e lembretes de remédio e consultas.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="example reveal" href="https://app.meuassistente.io/cadastro">
+            <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+            <h3>Meu negócio</h3>
+            <p>Agenda de clientes, cobranças e o DAS do MEI em dia.</p>
+            <span class="example-link">Usar este assistente <span aria-hidden="true">→</span></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Funcionalidades -->
-    <section class="section" id="funcionalidades">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Funcionalidades</span>
-          <h2>Tudo o que você precisa em uma conversa</h2>
-          <p>Um único assistente para dar conta das pequenas tarefas que ocupam o seu dia.</p>
+    <!-- Diferenciais -->
+    <section class="section section-soft" id="diferenciais">
+      <div class="container feature-split">
+        <div class="feature-photo reveal">
+          <picture>
+            <source srcset="/assets/img/rotina.webp" type="image/webp">
+            <img src="/assets/img/rotina.jpg" width="900" height="1200" loading="lazy" alt="Homem em pé na cozinha consultando o celular">
+          </picture>
         </div>
-        <div class="features">
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M5 3 2 6M22 6l-3-3"/></svg></div>
-            <h3>Lembretes e alarmes inteligentes</h3>
-            <p>Peça “me lembra amanhã depois do almoço” e pronto. Lembretes únicos ou recorrentes, no horário certo.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18M8 14h2M14 14h2M8 18h2"/></svg></div>
-            <h3>Organização da agenda</h3>
-            <p>Marque, consulte e remarque compromissos conversando. Receba um resumo do seu dia logo cedo.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg></div>
-            <h3>Listas de compras e de tarefas</h3>
-            <p>Adicione e risque itens a qualquer momento. Suas listas sempre à mão, sem precisar abrir outro app.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4"/></svg></div>
-            <h3>Resumo de textos e áudios</h3>
-            <p>Encaminhe aquele áudio longo ou texto extenso e receba os pontos principais em segundos.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg></div>
-            <h3>Respostas a perguntas do dia a dia</h3>
-            <p>Tire dúvidas rápidas, peça explicações, ajuda para escrever uma mensagem ou fazer uma conta.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.9A4 4 0 0 1 7.5 6a5 5 0 0 1 9 0A4 4 0 0 1 18 13.9V21H6z"/><path d="M6 17h12"/></svg></div>
-            <h3>Receitas e planejamento</h3>
-            <p>Sugestões de receitas com o que você tem em casa, cardápio da semana e ajuda para planejar a rotina.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Para quem é -->
-    <section class="section section-soft" id="para-quem">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Para quem é</span>
-          <h2>Feito para a rotina real</h2>
-          <p>Para quem tem muita coisa na cabeça e pouco tempo para organizar.</p>
-        </div>
-        <div class="audience">
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></svg></div>
-            <h3>Profissionais ocupados</h3>
-            <p>Agenda em dia, reuniões lembradas e mensagens longas resumidas.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></div>
-            <h3>Mães e pais</h3>
-            <p>Horários da escola, consultas, remédios e a lista do mercado em um só lugar.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
-            <h3>Estudantes</h3>
-            <p>Prazos de trabalhos, datas de prova, resumos e ajuda para estudar.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.5-5h-15z"/><path d="M4 9v11h16V9M9 20v-6h6v6"/></svg></div>
-            <h3>Pequenos empreendedores</h3>
-            <p>Compromissos com clientes, tarefas do negócio e lembretes de cobrança.</p>
-          </article>
+        <div>
+          <div class="reveal">
+            <p class="label">Por que o Meu Assistente</p>
+            <h2>Feito para pessoas, não para programadores.</h2>
+          </div>
+          <ul class="benefits">
+            <li class="reveal">
+              <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+              <div><h3>Fala como você fala</h3><p>Em português do Brasil. Entende áudio, abreviação e até erro de digitação.</p></div>
+            </li>
+            <li class="reveal">
+              <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 3.6 2.2 4.6.6.6.8 1.2.8 2V17h6v-1.4c0-.8.2-1.4.8-2 1-1 2.2-2.4 2.2-4.6a6 6 0 0 0-6-6zM10 21h4"/></svg>
+              <div><h3>Lembra de você</h3><p>Cada assistente guarda o que importa. Você não precisa explicar tudo de novo.</p></div>
+            </li>
+            <li class="reveal">
+              <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+              <div><h3>Avisa na hora certa</h3><p>Lembretes e resumos chegam no seu celular, sem você precisar pedir.</p></div>
+            </li>
+            <li class="reveal">
+              <svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+              <div><h3>Seus dados são seus</h3><p>Conexão protegida e nenhuma venda de dados. Você pode apagar tudo quando quiser.</p></div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -188,36 +225,36 @@
     <section class="section" id="planos">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Planos</span>
-          <h2>Comece grátis, evolua quando quiser</h2>
-          <p>Os valores serão divulgados em breve. Quem entrar na lista de espera fica sabendo primeiro.</p>
+          <p class="label">Planos</p>
+          <h2>Comece grátis. Libere tudo quando quiser.</h2>
+          <p>Sem fidelidade. Cancele quando quiser, sem multa.</p>
         </div>
         <div class="pricing">
           <div class="plan reveal">
             <h3>Gratuito</h3>
+            <p class="plan-desc">Para conhecer e organizar o básico.</p>
             <div class="plan-price">R$ 0</div>
-            <p class="plan-desc">Recursos básicos para organizar o dia a dia.</p>
             <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lembretes e alarmes</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Listas de compras e tarefas</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Perguntas do dia a dia</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Uso com limites mensais</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Crie seus primeiros assistentes</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Exemplos prontos para usar</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lembretes no celular</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Uso com limite mensal</li>
             </ul>
-            <a class="btn btn-ghost btn-block" href="#lista-de-espera">Entrar na lista de espera</a>
+            <a class="btn btn-outline btn-block" href="https://app.meuassistente.io/cadastro">Começar grátis</a>
           </div>
           <div class="plan featured reveal">
-            <span class="plan-badge">Mais completo</span>
+            <span class="plan-badge">Mais escolhido</span>
             <h3>Premium</h3>
-            <div class="plan-price">Em breve</div>
-            <p class="plan-desc">Recursos ilimitados para quem quer ir além.</p>
+            <p class="plan-desc">Para quem quer o assistente em todas as partes da rotina.</p>
+            <div class="plan-price">R$ 19,90<span>/mês</span></div>
             <ul>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tudo do plano Gratuito, sem limites</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Organização completa da agenda</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Resumo de textos e áudios ilimitado</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Receitas e planejamento personalizados</li>
-              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Atendimento prioritário</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Mais assistentes</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Limite mensal de conversas bem maior</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Resumo de áudios e textos longos</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Lembretes e resumos diários</li>
+              <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Atendimento prioritário</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="#lista-de-espera">Quero ser avisado</a>
+            <a class="btn btn-primary btn-block" href="https://app.meuassistente.io/cadastro?plano=premium">Assinar Premium</a>
           </div>
         </div>
       </div>
@@ -225,66 +262,47 @@
 
     <!-- FAQ -->
     <section class="section section-soft" id="faq">
-      <div class="container">
+      <div class="container narrow">
         <div class="section-head reveal">
-          <span class="eyebrow">Perguntas frequentes</span>
-          <h2>Ficou alguma dúvida?</h2>
+          <p class="label">Dúvidas</p>
+          <h2>Perguntas frequentes</h2>
         </div>
         <div class="faq reveal">
           <details>
             <summary>O que é o Meu Assistente?</summary>
-            <p>O Meu Assistente é um assistente pessoal com inteligência artificial que ajuda você a organizar e automatizar tarefas do dia a dia, como lembretes, agenda, listas, resumos e respostas rápidas, tudo por meio de uma conversa pelo WhatsApp ou pela web.</p>
+            <p>É um app em que você cria assistentes pessoais com inteligência artificial, cada um para uma parte da sua vida: alimentação, estudos, contas, trabalho e o que mais precisar. Você conversa com eles por texto ou áudio, e eles organizam as coisas e te avisam na hora certa.</p>
           </details>
           <details>
-            <summary>Como funciona?</summary>
-            <p>Você envia uma mensagem de texto ou áudio, do jeito que falaria com uma pessoa. A inteligência artificial entende o pedido, identifica datas, horários e itens, confirma com você e organiza tudo automaticamente. Quando chega a hora, você recebe o aviso na própria conversa.</p>
+            <summary>Preciso entender de tecnologia?</summary>
+            <p>Não. Você explica o que precisa com as suas palavras, como faria com uma pessoa, e o assistente fica pronto. Se você sabe mandar uma mensagem no celular, já sabe tudo o que precisa.</p>
+          </details>
+          <details>
+            <summary>Funciona no meu celular?</summary>
+            <p>Sim. O Meu Assistente funciona no iPhone, no Android e no computador, pelo navegador.</p>
           </details>
           <details>
             <summary>É seguro?</summary>
-            <p>Sim. Tratamos seus dados de acordo com a Lei Geral de Proteção de Dados (LGPD), usamos conexões criptografadas e coletamos apenas o necessário para o serviço funcionar. Não vendemos seus dados. Você pode pedir a exclusão das suas informações a qualquer momento. Saiba mais na nossa <a href="/privacidade.html">Política de Privacidade</a>.</p>
+            <p>Sim. Seguimos a Lei Geral de Proteção de Dados (LGPD), usamos conexões criptografadas e coletamos apenas o necessário para o serviço funcionar. Não vendemos seus dados, e você pode pedir a exclusão das suas informações a qualquer momento. Saiba mais na nossa <a href="/privacidade.html">Política de Privacidade</a>.</p>
           </details>
           <details>
             <summary>Quanto custa?</summary>
-            <p>Haverá um plano Gratuito, com recursos básicos, e um plano Premium, com recursos ilimitados. Os valores do Premium serão divulgados em breve. Quem estiver na lista de espera recebe as novidades primeiro.</p>
+            <p>Você pode começar grátis, sem cartão. O plano Premium custa R$ 19,90 por mês e libera mais assistentes, um limite de conversas bem maior e os recursos extras.</p>
           </details>
           <details>
             <summary>Como faço para cancelar?</summary>
-            <p>Você pode cancelar quando quiser, sem multa e sem burocracia: basta pedir na própria conversa com o assistente, pela área da sua conta na web ou pelo e-mail <a href="mailto:contato@meuassistente.io">contato@meuassistente.io</a>. Após o cancelamento do Premium, você continua com acesso até o fim do período já pago.</p>
+            <p>Quando quiser, sem multa e sem burocracia: pela área da sua conta ou pelo e-mail <a href="mailto:contato@meuassistente.io">contato@meuassistente.io</a>. Depois do cancelamento, você continua com o Premium até o fim do período já pago.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- Lista de espera -->
-    <section class="section" id="lista-de-espera">
-      <div class="container">
-        <div class="form-wrap reveal">
-          <div>
-            <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff">Lista de espera</span>
-            <h2>Teste grátis antes de todo mundo</h2>
-            <p>Estamos liberando o acesso aos poucos. Deixe seus dados e avisaremos pelo WhatsApp e por e-mail assim que chegar a sua vez.</p>
-          </div>
-          <form class="form" data-form="waitlist" novalidate>
-            <div class="field">
-              <label for="w-nome">Nome</label>
-              <input id="w-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
-            </div>
-            <div class="field">
-              <label for="w-email">E-mail</label>
-              <input id="w-email" name="email" type="email" autocomplete="email" placeholder="voce@email.com" required>
-            </div>
-            <div class="field">
-              <label for="w-whats">WhatsApp</label>
-              <input id="w-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 91234-5678" required>
-            </div>
-            <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-            <label class="consent">
-              <input type="checkbox" name="consentimento" value="sim" required>
-              <span>Concordo em receber comunicações sobre o Meu Assistente e li a <a href="/privacidade.html">Política de Privacidade</a>.</span>
-            </label>
-            <button class="btn btn-primary btn-block" type="submit">Quero testar grátis</button>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
+    <!-- CTA final -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <h2>Seu primeiro assistente fica pronto em um minuto.</h2>
+        <div class="cta-actions">
+          <a class="btn btn-light btn-lg" href="https://app.meuassistente.io/cadastro">Criar meu assistente</a>
+          <p>Grátis para começar · Sem cartão</p>
         </div>
       </div>
     </section>
@@ -294,11 +312,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a class="logo" href="/">
-            <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
-            Meu Assistente
-          </a>
-          <p>Seu assistente pessoal com inteligência artificial, pelo WhatsApp e pela web.</p>
+          <a class="logo" href="/"><span class="logo-dot" aria-hidden="true"></span>Meu Assistente</a>
+          <p>Assistentes pessoais com inteligência artificial, feitos para a rotina brasileira.</p>
         </div>
         <ul class="footer-links">
           <li><a href="/sobre.html">Sobre</a></li>

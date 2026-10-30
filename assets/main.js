@@ -41,17 +41,6 @@ if ("IntersectionObserver" in window) {
   document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
 }
 
-// Máscara simples de WhatsApp: (11) 91234-5678
-document.querySelectorAll('input[name="whatsapp"]').forEach((input) => {
-  input.addEventListener("input", () => {
-    const d = input.value.replace(/\D/g, "").slice(0, 11);
-    let out = d;
-    if (d.length > 2) out = `(${d.slice(0, 2)}) ${d.slice(2)}`;
-    if (d.length > 7) out = `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}`;
-    input.value = out;
-  });
-});
-
 // Envio dos formulários
 document.querySelectorAll("form[data-form]").forEach((form) => {
   const status = form.querySelector(".form-status");
@@ -64,14 +53,6 @@ document.querySelectorAll("form[data-form]").forEach((form) => {
 
     if (!form.checkValidity()) {
       form.reportValidity();
-      return;
-    }
-
-    const phone = form.querySelector('input[name="whatsapp"]');
-    if (phone && phone.value.replace(/\D/g, "").length < 10) {
-      status.className = "form-status err";
-      status.textContent = "Informe um WhatsApp válido com DDD.";
-      phone.focus();
       return;
     }
 
@@ -88,7 +69,7 @@ document.querySelectorAll("form[data-form]").forEach((form) => {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           ...data,
-          _subject: form.dataset.form === "waitlist" ? "Nova inscrição na lista de espera" : "Nova mensagem de contato",
+          _subject: "Nova mensagem de contato",
           _template: "table",
           _captcha: "false",
         }),
@@ -96,10 +77,7 @@ document.querySelectorAll("form[data-form]").forEach((form) => {
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
       status.className = "form-status ok";
-      status.textContent =
-        form.dataset.form === "waitlist"
-          ? "Pronto! Você está na lista de espera. Avisaremos assim que liberarmos seu acesso."
-          : "Mensagem enviada! Responderemos o quanto antes.";
+      status.textContent = "Mensagem enviada! Responderemos o quanto antes.";
     } catch {
       status.className = "form-status err";
       status.textContent = "Não foi possível enviar agora. Tente novamente ou escreva para contato@meuassistente.io.";
